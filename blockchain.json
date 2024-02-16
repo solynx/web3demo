@@ -1,17 +1,17 @@
 [
  {
-  "previousHash": "0991",
-  "data": "This is data",
-  "hash": "hashh"
+  "previousHash": null,
+  "data": "GenesisBlock",
+  "hash": "385"
  },
  {
-  "previousHash": "109291",
-  "data": "This is data1",
-  "hash": "hashh1"
- },
- {
-  "previousHash": "109291code",
+  "previousHash": "385",
   "data": "This is data12",
-  "hash": "hashh31"
+  "hash": "345"
+ },
+ {
+  "previousHash": "345",
+  "data": "This is data12",
+  "hash": "596"
  }
 ]

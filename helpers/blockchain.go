@@ -7,14 +7,14 @@ import (
 	"solyn/reth/schema"
 )
 
-func GetBlockchain() []schema.Block {
+func GetBlockchain() ([]schema.Block, error) {
 	var blockchain []schema.Block
 	file, err := os.ReadFile("blockchain.json") // For read access.
 	if err != nil {
-		log.Fatal(err)
+		return blockchain, err
 	}
 	json.Unmarshal([]byte(file), &blockchain)
-	return blockchain
+	return blockchain, nil
 }
 
 func WriteBlockchain(blockchain []schema.Block) {
